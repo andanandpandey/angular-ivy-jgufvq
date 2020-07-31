@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+<div>
+  <textarea   rows="4" cols="50"
+    placeholder="Write something here..."
+    [(ngModel)]="textdata"
+    [maxlength]="maxCharacters">
+  </textarea>
+  <br>
+  <label> Characters Remaining: {{textdata.length}}/{{maxCharacters}}</label>
+  <br/>
+</div>
